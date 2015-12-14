@@ -1,0 +1,40 @@
+{
+  "name": "json-to-ndjson",
+  "version": "0.0.1",
+  "description": "Converts JSON array to NDJSON",
+  "main": "index.js",
+  "bin": {
+    "json-to-ndjson": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nypl-spacetime/json-to-ndjson"
+  },
+  "scripts": {
+    "test": "jshint index.js && jscs index.js"
+  },
+  "author": "Bert Spaan",
+  "license": "GPLv3",
+  "devDependencies": {
+    "jscs": "^1.10.0",
+    "jshint": "^2.6.0"
+  },
+  "dependencies": {
+    "JSONStream": "^1.0.7",
+    "highland": "^2.5.1",
+    "minimist": "^1.1.1"
+  },
+  "jshintConfig": {
+    "node": true,
+    "globalstrict": false,
+    "undef": true,
+    "unused": true,
+    "noarg": true
+  },
+  "jscsConfig": {
+    "preset": "airbnb",
+    "requireCamelCaseOrUpperCaseIdentifiers": null,
+    "disallowMultipleVarDecl": true,
+    "requireMultipleVarDecl": null
+  }
+}
